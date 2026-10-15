@@ -4,59 +4,154 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="CMPE 491 Senior Project 1 at TED University.">
-  <title>CMPE 491 | Senior Project 1</title>
+  <meta name="description" content="LifeLink: A Secure Infrastructure-Independent Emergency Communication System — TED University CMPE 491 Senior Project 1.">
+  <title>LifeLink | CMPE 491 Senior Project 1</title>
 
   <style>
     * {
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background-color: #f4f6fb;
+      background: #f4f6fb;
       color: #243047;
-      text-align: center;
-      line-height: 1.6;
+      line-height: 1.65;
     }
 
     header {
-      background-color: #243b74;
-      color: white;
-      padding: 64px 20px;
+      background: #243b74;
+      color: #fff;
+      text-align: center;
+      padding: 64px 20px 54px;
     }
 
     header h1 {
-      font-size: clamp(2rem, 5vw, 2.7rem);
-      margin: 0 0 10px;
+      max-width: 930px;
+      margin: 0 auto 18px;
+      font-size: clamp(1.9rem, 4.2vw, 2.8rem);
+      line-height: 1.25;
     }
 
     header p {
-      font-size: 1.15rem;
       margin: 0;
+      font-size: 1.1rem;
+    }
+
+    header .university {
+      margin-top: 8px;
+      opacity: 0.87;
+      font-size: 0.98rem;
+    }
+
+    nav {
+      margin-top: 28px;
+      display: flex;
+      justify-content: center;
+      gap: 12px 22px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.94rem;
+      border-bottom: 1px solid transparent;
+    }
+
+    nav a:hover,
+    nav a:focus-visible {
+      border-bottom-color: #fff;
     }
 
     main {
-      max-width: 1000px;
-      margin: 38px auto;
+      max-width: 1020px;
+      margin: 36px auto;
       padding: 0 20px;
     }
 
     section {
-      background-color: #fff;
-      border-radius: 16px;
-      padding: 40px 24px;
+      background: #fff;
+      padding: 34px 36px;
       margin-bottom: 24px;
+      border-radius: 16px;
+      box-shadow: 0 3px 12px rgba(23, 39, 76, 0.04);
     }
 
     h2 {
+      color: #243b74;
       font-size: 1.65rem;
       margin: 0 0 16px;
     }
 
+    h3 {
+      color: #243b74;
+      font-size: 1.12rem;
+      margin: 0 0 8px;
+    }
+
     p {
       margin: 0;
+    }
+
+    .components,
+    .timeline {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .component,
+    .semester {
+      background: #f4f6fb;
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .component {
+      border-left: 4px solid #3a69ae;
+    }
+
+    .component p,
+    .semester li {
+      font-size: 0.96rem;
+    }
+
+    .deliverables {
+      padding-left: 22px;
+      margin: 0;
+    }
+
+    .deliverables li {
+      margin-bottom: 9px;
+    }
+
+    .deliverables li:last-child {
+      margin-bottom: 0;
+    }
+
+    .semester {
+      border-top: 4px solid #243b74;
+    }
+
+    .semester p {
+      color: #52617a;
+      margin-bottom: 12px;
+      font-size: 0.93rem;
+    }
+
+    .semester ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    .semester li + li {
+      margin-top: 8px;
     }
 
     .team-members {
@@ -66,13 +161,33 @@
     }
 
     .team-members li + li {
-      margin-top: 8px;
+      margin-top: 7px;
     }
 
     footer {
-      padding: 8px 20px 35px;
+      text-align: center;
+      padding: 8px 20px 36px;
       color: #626d7f;
       font-size: 0.9rem;
+    }
+
+    @media (max-width: 650px) {
+      header {
+        padding: 48px 18px 40px;
+      }
+
+      section {
+        padding: 25px 20px;
+      }
+
+      .components,
+      .timeline {
+        grid-template-columns: 1fr;
+      }
+
+      h2 {
+        font-size: 1.45rem;
+      }
     }
   </style>
 </head>
@@ -80,30 +195,180 @@
 <body>
 
   <header>
-    <h1>CMPE 491 — Senior Project 1</h1>
-    <p>TED University | Department of Computer Engineering</p>
+    <h1>
+      LifeLink: A Secure Infrastructure-Independent
+      Emergency Communication System
+    </h1>
+
+    <p>CMPE 491 — Senior Project 1</p>
+
+    <p class="university">
+      TED University | Department of Computer Engineering
+    </p>
+
+    <nav aria-label="Page navigation">
+      <a href="#about">About</a>
+      <a href="#components">System Components</a>
+      <a href="#deliverables">Deliverables</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#team">Team</a>
+    </nav>
   </header>
 
   <main>
 
-    <section>
+    <!-- ABOUT THE PROJECT -->
+    <section id="about">
       <h2>About the Project</h2>
+
       <p>
-        This website presents our CMPE 491 Senior Project 1.
-        More information about the project's goals and scope
-        will be added soon.
+        LifeLink is an emergency communication system designed
+        for situations where mobile networks and internet access
+        are unavailable, with earthquake rescue as its primary
+        scenario. The proposed system combines a low-power
+        wristband for help requests and pulse indications with
+        measurement-quality assessment, an offline messaging
+        channel, and a local gateway with a rescue-team dashboard.
+        The gateway is designed to authenticate and prioritize
+        messages, manage excessive traffic, and relay genuine
+        acknowledgments from the rescue team. Communication
+        relies on the project’s local equipment rather than
+        mobile networks or internet access.
       </p>
     </section>
 
-    <section>
-      <h2>Project Features</h2>
-      <p>
-        Key features and technical details will be added
-        as the project progresses.
-      </p>
+
+    <!-- SYSTEM COMPONENTS -->
+    <section id="components">
+      <h2>System Components</h2>
+
+      <div class="components">
+
+        <div class="component">
+          <h3>Low-Power Wristband</h3>
+          <p>
+            Enables help requests and pulse indications,
+            together with measurement-quality assessment.
+          </p>
+        </div>
+
+        <div class="component">
+          <h3>Offline Messaging Channel</h3>
+          <p>
+            Supports local communication without relying
+            on mobile networks or internet access.
+          </p>
+        </div>
+
+        <div class="component">
+          <h3>Local Gateway</h3>
+          <p>
+            Authenticates and prioritizes messages,
+            manages excessive traffic, and relays
+            genuine rescue-team acknowledgments.
+          </p>
+        </div>
+
+        <div class="component">
+          <h3>Rescue-Team Dashboard</h3>
+          <p>
+            Provides rescue teams with an interface
+            to review incoming requests and send
+            acknowledgments.
+          </p>
+        </div>
+
+      </div>
     </section>
 
-    <section>
+
+    <!-- DELIVERABLES -->
+    <section id="deliverables">
+      <h2>Planned Deliverables</h2>
+
+      <ul class="deliverables">
+        <li>
+          System requirements, architecture,
+          and technical documentation.
+        </li>
+
+        <li>
+          A prototype of the low-power wristband
+          and its help-request and pulse-indication functions.
+        </li>
+
+        <li>
+          An offline messaging channel prototype.
+        </li>
+
+        <li>
+          A local gateway implementing message authentication,
+          prioritization, traffic management,
+          and acknowledgment relay.
+        </li>
+
+        <li>
+          A rescue-team dashboard prototype.
+        </li>
+
+        <li>
+          An integrated demonstration and evaluation report.
+        </li>
+      </ul>
+    </section>
+
+
+    <!-- PROJECT TIMELINE -->
+    <section id="timeline">
+      <h2>Project Timeline</h2>
+
+      <div class="timeline">
+
+        <div class="semester">
+          <h3>Semester 1</h3>
+          <p>Research and Design — CMPE 491</p>
+
+          <ul>
+            <li>
+              Identify requirements and research
+              communication options.
+            </li>
+            <li>
+              Design the overall system architecture
+              and components.
+            </li>
+            <li>
+              Plan prototypes and initial feasibility tests.
+            </li>
+          </ul>
+        </div>
+
+        <div class="semester">
+          <h3>Semester 2</h3>
+          <p>Implementation and Validation</p>
+
+          <ul>
+            <li>
+              Develop the wristband, messaging channel,
+              gateway, and dashboard.
+            </li>
+            <li>
+              Integrate components and evaluate
+              system behavior.
+            </li>
+            <li>
+              Prepare the final demonstration
+              and project report.
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- TEAM MEMBERS -->
+    <section id="team">
       <h2>Team Members</h2>
 
       <ul class="team-members">
@@ -111,13 +376,13 @@
         <li>Mehmet Alp Vural</li>
         <li>İlayda Tsetsekos</li>
       </ul>
-
     </section>
 
   </main>
 
   <footer>
-    TED University | CMPE 491 — Senior Project 1
+    TED University | Department of Computer Engineering
+    | CMPE 491 — Senior Project 1
   </footer>
 
 </body>

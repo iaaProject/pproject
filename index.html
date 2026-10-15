@@ -164,6 +164,33 @@
       margin-top: 7px;
     }
 
+    /* PROJECT SUPERVISION AND JURY */
+
+    .jury-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .jury-card {
+      background: #f4f6fb;
+      border-radius: 12px;
+      padding: 24px 18px;
+      text-align: center;
+      border-top: 4px solid #243b74;
+    }
+
+    .jury-card h3 {
+      color: #243b74;
+      font-size: 1.05rem;
+      margin-bottom: 12px;
+    }
+
+    .jury-card p {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
     footer {
       text-align: center;
       padding: 8px 20px 36px;
@@ -181,7 +208,8 @@
       }
 
       .components,
-      .timeline {
+      .timeline,
+      .jury-grid {
         grid-template-columns: 1fr;
       }
 
@@ -194,6 +222,7 @@
 
 <body>
 
+  <!-- HEADER -->
   <header>
     <h1>
       LifeLink: A Secure Infrastructure-Independent
@@ -206,14 +235,17 @@
       TED University | Department of Computer Engineering
     </p>
 
+    <!-- NAVIGATION -->
     <nav aria-label="Page navigation">
       <a href="#about">About</a>
       <a href="#components">System Components</a>
       <a href="#deliverables">Deliverables</a>
       <a href="#timeline">Timeline</a>
       <a href="#team">Team</a>
+      <a href="#jury">Supervision &amp; Jury</a>
     </nav>
   </header>
+
 
   <main>
 
@@ -287,6 +319,7 @@
       <h2>Planned Deliverables</h2>
 
       <ul class="deliverables">
+
         <li>
           System requirements, architecture,
           and technical documentation.
@@ -314,6 +347,7 @@
         <li>
           An integrated demonstration and evaluation report.
         </li>
+
       </ul>
     </section>
 
@@ -376,10 +410,38 @@
         <li>Mehmet Alp Vural</li>
         <li>İlayda Tsetsekos</li>
       </ul>
+
+    </section>
+
+
+    <!-- PROJECT SUPERVISION AND JURY -->
+    <section id="jury">
+      <h2>Project Supervision &amp; Jury</h2>
+
+      <div class="jury-grid">
+
+        <div class="jury-card">
+          <h3>Project Supervisor</h3>
+          <p>Mert Burkay Çöteli</p>
+        </div>
+
+        <div class="jury-card">
+          <h3>Jury Member 1</h3>
+          <p>Ayşe Yasemin Sedim</p>
+        </div>
+
+        <div class="jury-card">
+          <h3>Jury Member 2</h3>
+          <p>Eren Ulu</p>
+        </div>
+
+      </div>
     </section>
 
   </main>
 
+
+  <!-- FOOTER -->
   <footer>
     TED University | Department of Computer Engineering
     | CMPE 491 — Senior Project 1

@@ -3,9 +3,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
   <meta name="description"
-    content="LifeLink: A Secure Infrastructure-Independent Emergency Communication System — TED University CMPE 491.">
+        content="LifeLink: A Secure Infrastructure-Independent Emergency Communication System - TED University CMPE 491.">
+
   <title>LifeLink | CMPE 491 Senior Project 1</title>
 
   <style>
@@ -19,9 +22,13 @@
       --border: #e1e7f0;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       margin: 0;
@@ -31,10 +38,14 @@
       background: var(--bg);
     }
 
+    /* HEADER */
+
     .hero {
       padding: 58px 20px 36px;
       background: linear-gradient(
-        140deg, var(--deep), var(--navy)
+        140deg,
+        var(--deep),
+        var(--navy)
       );
       color: white;
       text-align: center;
@@ -42,10 +53,10 @@
 
     .eyebrow {
       margin: 0 0 12px;
-      font-size: .84rem;
-      letter-spacing: .1em;
+      font-size: 0.84rem;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
-      opacity: .85;
+      opacity: 0.85;
     }
 
     .hero h1 {
@@ -57,7 +68,7 @@
 
     .hero h1 span {
       display: block;
-      font-size: .67em;
+      font-size: 0.67em;
       font-weight: 500;
       margin-top: 12px;
     }
@@ -67,6 +78,8 @@
       font-size: 1.1rem;
       font-weight: 600;
     }
+
+    /* NAVIGATION */
 
     nav {
       display: flex;
@@ -79,12 +92,14 @@
     nav a {
       color: white;
       text-decoration: none;
-      font-size: .92rem;
+      font-size: 0.92rem;
     }
 
     nav a:hover {
       text-decoration: underline;
     }
+
+    /* MAIN CONTENT */
 
     main {
       max-width: 1060px;
@@ -97,7 +112,7 @@
       padding: 32px 36px;
       background: white;
       border-radius: 16px;
-      box-shadow: 0 3px 15px rgba(27,45,88,.045);
+      box-shadow: 0 3px 15px rgba(27,45,88,0.045);
       scroll-margin-top: 24px;
     }
 
@@ -113,12 +128,16 @@
       margin: 0 0 7px;
     }
 
-    p { margin: 0; }
+    p {
+      margin: 0;
+    }
 
     .section-note {
       color: var(--muted);
       margin-bottom: 20px;
     }
+
+    /* SYSTEM COMPONENTS */
 
     .component-grid,
     .semester-grid {
@@ -139,7 +158,11 @@
       border-left: 4px solid var(--blue);
     }
 
-    .component p { font-size: .96rem; }
+    .component p {
+      font-size: 0.96rem;
+    }
+
+    /* DELIVERABLES */
 
     .deliverables {
       margin: 0;
@@ -159,7 +182,7 @@
 
     .report {
       display: grid;
-      grid-template-columns: 58px minmax(0,1fr);
+      grid-template-columns: 58px minmax(0, 1fr);
       gap: 18px;
       border: 1px solid var(--border);
       border-radius: 12px;
@@ -186,7 +209,7 @@
     .date {
       display: block;
       color: var(--muted);
-      font-size: .92rem;
+      font-size: 0.92rem;
       margin-bottom: 9px;
     }
 
@@ -198,29 +221,37 @@
 
     .file-link {
       display: inline-block;
-      padding: 5px 11px;
+      padding: 7px 14px;
       border-radius: 7px;
       border: 1px solid #b6c9e6;
       color: var(--navy);
       background: #edf3ff;
-      font-size: .85rem;
+      font-size: 0.87rem;
+      font-weight: 600;
       text-decoration: none;
+      transition: background 0.2s ease;
     }
 
     .file-link:hover {
       background: #dce9ff;
     }
 
+    .file-link:focus-visible {
+      outline: 3px solid var(--blue);
+      outline-offset: 2px;
+    }
+
     .file-link.pending {
       background: #f3f5f8;
       border-color: var(--border);
       color: var(--muted);
+      font-weight: normal;
       cursor: default;
     }
 
     .report-note {
       color: var(--muted);
-      font-size: .86rem;
+      font-size: 0.86rem;
       margin-top: 15px;
     }
 
@@ -233,7 +264,7 @@
     .semester-subtitle {
       color: var(--muted);
       margin-bottom: 13px;
-      font-size: .93rem;
+      font-size: 0.93rem;
     }
 
     .semester ul {
@@ -245,7 +276,7 @@
       margin-top: 10px;
     }
 
-    /* TEAM AND JURY */
+    /* TEAM */
 
     .team-members {
       margin: 0;
@@ -255,6 +286,8 @@
     .team-members li + li {
       margin-top: 7px;
     }
+
+    /* SUPERVISION AND JURY */
 
     .jury-grid {
       display: grid;
@@ -271,19 +304,30 @@
       font-weight: 600;
     }
 
+    /* FOOTER */
+
     footer {
       text-align: center;
       padding: 0 20px 34px;
       color: var(--muted);
-      font-size: .9rem;
+      font-size: 0.9rem;
     }
 
+    /* MOBILE RESPONSIVENESS */
+
     @media (max-width: 700px) {
-      .hero { padding-top: 45px; }
 
-      main { padding: 0 14px; }
+      .hero {
+        padding-top: 45px;
+      }
 
-      section { padding: 24px 20px; }
+      main {
+        padding: 0 14px;
+      }
+
+      section {
+        padding: 24px 20px;
+      }
 
       .component-grid,
       .semester-grid,
@@ -292,7 +336,7 @@
       }
 
       .report {
-        grid-template-columns: 43px minmax(0,1fr);
+        grid-template-columns: 43px minmax(0, 1fr);
         gap: 12px;
         padding: 13px;
       }
@@ -302,7 +346,9 @@
         height: 40px;
       }
 
-      h2 { font-size: 1.4rem; }
+      h2 {
+        font-size: 1.4rem;
+      }
     }
   </style>
 </head>
@@ -310,7 +356,9 @@
 <body>
 
   <!-- HEADER -->
+
   <header class="hero">
+
     <p class="eyebrow">
       TED University · Department of Computer Engineering
     </p>
@@ -336,35 +384,40 @@
       <a href="#team">Team</a>
       <a href="#jury">Supervision &amp; Jury</a>
     </nav>
+
   </header>
+
 
   <main>
 
     <!-- ABOUT THE PROJECT -->
+
     <section id="about">
+
       <h2>About the Project</h2>
 
       <p>
-        LifeLink is an emergency communication system
-        designed for situations where mobile networks
-        and internet access are unavailable, with
-        earthquake rescue as its primary scenario.
-        The proposed system combines a low-power
-        wristband for help requests and pulse
-        indications with measurement-quality
-        assessment, an offline messaging channel,
-        and a local gateway with a rescue-team dashboard.
-        The gateway is designed to authenticate and
-        prioritize messages, manage excessive traffic,
-        and relay genuine acknowledgments from the
-        rescue team. Communication relies on the
-        project’s local equipment rather than mobile
-        networks or internet access.
+        LifeLink is an emergency communication system designed
+        for situations where mobile networks and internet access
+        are unavailable, with earthquake rescue as its primary
+        scenario. The proposed system combines a low-power
+        wristband for help requests and pulse indications with
+        measurement-quality assessment, an offline messaging
+        channel, and a local gateway with a rescue-team dashboard.
+        The gateway is designed to authenticate and prioritize
+        messages, manage excessive traffic, and relay genuine
+        acknowledgments from the rescue team. Communication
+        relies on the project's local equipment rather than
+        mobile networks or internet access.
       </p>
+
     </section>
 
+
     <!-- SYSTEM COMPONENTS -->
+
     <section id="components">
+
       <h2>System Components</h2>
 
       <div class="component-grid">
@@ -372,18 +425,16 @@
         <article class="component">
           <h3>Low-Power Wristband</h3>
           <p>
-            Supports help requests and pulse
-            indications with measurement-quality
-            assessment.
+            Supports help requests and pulse indications
+            with measurement-quality assessment.
           </p>
         </article>
 
         <article class="component">
           <h3>Offline Messaging Channel</h3>
           <p>
-            Enables communication using local
-            equipment without mobile networks
-            or internet access.
+            Enables communication using local equipment
+            without mobile networks or internet access.
           </p>
         </article>
 
@@ -399,200 +450,276 @@
         <article class="component">
           <h3>Rescue-Team Dashboard</h3>
           <p>
-            Provides rescue teams with a local
-            interface to review requests and
-            issue acknowledgments.
+            Provides rescue teams with a local interface
+            to review requests and issue acknowledgments.
           </p>
         </article>
 
       </div>
+
     </section>
 
+
     <!-- PLANNED DELIVERABLES -->
+
     <section id="deliverables">
+
       <h2>Planned Deliverables</h2>
 
       <ul class="deliverables">
+
         <li>
           System requirements, architecture,
           and technical documentation.
         </li>
+
         <li>
           A low-power wristband prototype for
           help requests and pulse indications.
         </li>
+
         <li>
           An offline messaging channel prototype.
         </li>
+
         <li>
           A local gateway for authentication,
           prioritization, traffic management,
           and acknowledgment relay.
         </li>
+
         <li>
           A rescue-team dashboard prototype.
         </li>
+
         <li>
           An integrated demonstration
           and evaluation report.
         </li>
+
       </ul>
+
     </section>
 
-    <!-- REPORTS AND BACKLOGS -->
+
+    <!-- REPORTS AND BACKLOG VERSIONS -->
+
     <section id="reports">
 
       <h2>Reports &amp; Backlog Versions (D1–D8)</h2>
 
       <p class="section-note">
         Official CMPE 491 deliverable schedule.
-        Reports, backlog versions, and demonstration
-        materials will become available here when
-        their files are uploaded.
+        Available reports and backlog versions can
+        be accessed through the links below.
+        Future deliverables will be published
+        as they become available.
       </p>
 
       <div class="report-list">
 
         <!-- D1 -->
+
         <article class="report">
+
           <div class="report-id">D1</div>
+
           <div>
             <h3>
               Project Proposal and Initial
               Literature Review
             </h3>
+
             <span class="date">
               Deadline: 16 October 2026
             </span>
+
             <div class="files">
-              <a class="file-link pending"
-                 data-file="reports/LifeLink_D1_Proposal_Initial_Literature_Review_EN.pdf"
-                 data-label="View D1 report">
-                Awaiting upload
+
+              <a class="file-link"
+                 href="reports/LifeLink_D1_Proposal_Initial_Literature_Review_EN.pdf"
+                 target="_blank"
+                 rel="noopener noreferrer">
+                View D1 Report ↗
               </a>
+
             </div>
           </div>
+
         </article>
 
+
         <!-- D2 -->
+
         <article class="report">
+
           <div class="report-id">D2</div>
+
           <div>
             <h3>
               Project Specifications and
               Literature Review
             </h3>
+
             <span class="date">
               Deadline: 23 October 2026
             </span>
+
             <div class="files">
-              <a class="file-link pending"
-                 data-file="reports/D2_Project_Specifications_and_Literature_Review.pdf"
-                 data-label="View D2 report">
-                Awaiting upload
+
+              <a class="file-link"
+                 href="reports/D2_Project_Specifications_and_Literature_Review.pdf"
+                 target="_blank"
+                 rel="noopener noreferrer">
+                View D2 Report ↗
               </a>
+
             </div>
           </div>
+
         </article>
+
 
         <!-- D3 -->
+
         <article class="report">
+
           <div class="report-id">D3</div>
+
           <div>
-            <h3>Backlog — Version 1</h3>
+            <h3>
+              Backlog — Version 1
+            </h3>
+
             <span class="date">
               Deadline: 23 October 2026
             </span>
+
             <div class="files">
-              <a class="file-link pending"
-                 data-file="reports/D3_Backlog_v1.pdf"
-                 data-label="View backlog v1">
-                Awaiting upload
+
+              <a class="file-link"
+                 href="reports/D3_Backlog_v1.pdf"
+                 target="_blank"
+                 rel="noopener noreferrer">
+                View Backlog v1 ↗
               </a>
+
             </div>
           </div>
+
         </article>
+
 
         <!-- D4 -->
+
         <article class="report">
+
           <div class="report-id">D4</div>
+
           <div>
             <h3>Analysis Report</h3>
+
             <span class="date">
               Deadline: 20 November 2026
             </span>
+
             <div class="files">
-              <a class="file-link pending"
-                 data-file="reports/D4_Analysis_Report.pdf"
-                 data-label="View D4 report">
+              <span class="file-link pending">
                 Awaiting upload
-              </a>
+              </span>
             </div>
           </div>
+
         </article>
+
 
         <!-- D5 -->
+
         <article class="report">
+
           <div class="report-id">D5</div>
+
           <div>
-            <h3>Updated Backlog — Version 2</h3>
+            <h3>
+              Updated Backlog — Version 2
+            </h3>
+
             <span class="date">
               Deadline: 20 November 2026
             </span>
+
             <div class="files">
-              <a class="file-link pending"
-                 data-file="reports/D5_Backlog_v2.pdf"
-                 data-label="View backlog v2">
+              <span class="file-link pending">
                 Awaiting upload
-              </a>
+              </span>
             </div>
           </div>
+
         </article>
+
 
         <!-- D6 -->
+
         <article class="report">
+
           <div class="report-id">D6</div>
+
           <div>
-            <h3>High-Level Design Report</h3>
+            <h3>
+              High-Level Design Report
+            </h3>
+
             <span class="date">
               Deadline: 31 December 2026
             </span>
+
             <div class="files">
-              <a class="file-link pending"
-                 data-file="reports/D6_High_Level_Design_Report.pdf"
-                 data-label="View D6 report">
+              <span class="file-link pending">
                 Awaiting upload
-              </a>
+              </span>
             </div>
           </div>
+
         </article>
+
 
         <!-- D7 -->
+
         <article class="report">
+
           <div class="report-id">D7</div>
+
           <div>
-            <h3>Updated Backlog — Version 3</h3>
+            <h3>
+              Updated Backlog — Version 3
+            </h3>
+
             <span class="date">
               Deadline: 31 December 2026
             </span>
+
             <div class="files">
-              <a class="file-link pending"
-                 data-file="reports/D7_Backlog_v3.pdf"
-                 data-label="View backlog v3">
+              <span class="file-link pending">
                 Awaiting upload
-              </a>
+              </span>
             </div>
           </div>
+
         </article>
 
+
         <!-- D8 -->
+
         <article class="report">
+
           <div class="report-id">D8</div>
+
           <div>
             <h3>
               Presentation, Poster and
               Initial Demonstration
             </h3>
+
             <span class="date">
               4–17 January 2027 ·
               Exact date to be announced (TBA)
@@ -600,56 +727,60 @@
 
             <div class="files">
 
-              <a class="file-link pending"
-                 data-file="reports/D8_Presentation.pdf"
-                 data-label="View presentation">
-                Presentation: awaiting upload
-              </a>
+              <span class="file-link pending">
+                Presentation: Awaiting upload
+              </span>
 
-              <a class="file-link pending"
-                 data-file="reports/D8_Poster.pdf"
-                 data-label="View poster">
-                Poster: awaiting upload
-              </a>
+              <span class="file-link pending">
+                Poster: Awaiting upload
+              </span>
 
-              <a class="file-link pending"
-                 data-file="reports/D8_Initial_Demonstration.mp4"
-                 data-label="View initial demonstration">
-                Demo: awaiting upload
-              </a>
+              <span class="file-link pending">
+                Demo: Awaiting upload
+              </span>
 
             </div>
           </div>
+
         </article>
 
       </div>
 
       <p class="report-note">
-        Files are published only when uploaded;
-        unsubmitted documents are not represented
-        as completed work.
+        Reports and backlog documents are provided
+        for academic documentation and project tracking.
+        Links become available as their corresponding
+        materials are published.
       </p>
+
     </section>
 
+
     <!-- PROJECT TIMELINE -->
+
     <section id="timeline">
 
       <h2>Project Timeline</h2>
 
       <div class="semester-grid">
 
+        <!-- SEMESTER 1 -->
+
         <article class="semester">
+
           <h3>Semester 1 — CMPE 491</h3>
+
           <p class="semester-subtitle">
             Research, Design and Initial Prototyping
             (2026–2027)
           </p>
 
           <ul>
+
             <li>
               <strong>October 2026:</strong>
               Project proposal, specifications,
-              literature review and initial
+              literature review, and initial
               backlog (D1–D3).
             </li>
 
@@ -667,23 +798,31 @@
 
             <li>
               <strong>January 2027:</strong>
-              Presentation, poster and initial
+              Presentation, poster, and initial
               prototype demonstration (D8),
               showing the basic flow from the
               wristband through offline messaging
               to the local gateway.
             </li>
+
           </ul>
+
         </article>
 
+
+        <!-- SEMESTER 2 -->
+
         <article class="semester">
+
           <h3>Semester 2</h3>
+
           <p class="semester-subtitle">
             System Refinement, Integration
             and Comprehensive Testing
           </p>
 
           <ul>
+
             <li>
               Extend and refine the wristband,
               messaging channel, local gateway,
@@ -698,8 +837,8 @@
 
             <li>
               Integrate the components and perform
-              more comprehensive functional,
-              reliability and performance tests.
+              comprehensive functional, reliability,
+              and performance tests.
             </li>
 
             <li>
@@ -707,25 +846,37 @@
               the final demonstration
               and project report.
             </li>
+
           </ul>
+
         </article>
 
       </div>
+
     </section>
 
+
     <!-- TEAM MEMBERS -->
+
     <section id="team">
+
       <h2>Team Members</h2>
 
       <ul class="team-members">
+
         <li>Alaettin Doğan</li>
         <li>Mehmet Alp Vural</li>
         <li>İlayda Tsetsekos</li>
+
       </ul>
+
     </section>
 
+
     <!-- PROJECT SUPERVISION AND JURY -->
+
     <section id="jury">
+
       <h2>Project Supervision &amp; Jury</h2>
 
       <div class="jury-grid">
@@ -746,43 +897,18 @@
         </article>
 
       </div>
+
     </section>
 
   </main>
 
+
   <!-- FOOTER -->
+
   <footer>
     TED University | Department of Computer Engineering
     | CMPE 491 — Senior Project 1
   </footer>
-
-  <!-- AUTOMATIC REPORT LINK ACTIVATION -->
-  <script>
-    document
-      .querySelectorAll('.file-link[data-file]')
-      .forEach(async (link) => {
-
-        const path = link.dataset.file;
-        const label = link.dataset.label;
-
-        try {
-          const response = await fetch(path, {
-            method: 'HEAD'
-          });
-
-          if (!response.ok) return;
-
-          link.href = path;
-          link.target = '_blank';
-          link.rel = 'noopener noreferrer';
-          link.textContent = label + ' ↗';
-          link.classList.remove('pending');
-
-        } catch (error) {
-          // Keep the placeholder until the file exists.
-        }
-      });
-  </script>
 
 </body>
 </html>

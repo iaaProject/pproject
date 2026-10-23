@@ -1,0 +1,15 @@
+Copyright (c) 2026 İlayda Tsetsekos, Mehmet Alp Vural, Alaettin Doğan.
+All rights reserved.
+
+LifeLink: A Secure Infrastructure-Independent Emergency Communication System
+TED University, Department of Computer Engineering, CMPE 491 Senior Project.
+
+The texts, reports, figures, designs and source code in this repository and on
+the associated website (https://iaaproject.github.io/pproject/) are the work of
+the authors named above. No part of them may be copied, modified, adapted or
+redistributed, in whole or in part, without the prior written permission of the
+authors. Viewing for evaluation and citation with full attribution are permitted.
+
+First shared with the jury: 14 October 2026.
+First published on the project website: 15 October 2026.
+D1 proposal submitted: 16 October 2026.

@@ -22,3 +22,7 @@ Digital Object Identifiers (DOIs) on Zenodo.
 
 - **Deadline:** 23 October 2026
 - **PDF:** [View D3 Backlog](reports/LifeLink_D3_Backlog_v1-2.pdf)
+
+## Copyright
+
+© 2026 İlayda Tsetsekos, Mehmet Alp Vural, Alaettin Doğan. All rights reserved. See [LICENSE](LICENSE).

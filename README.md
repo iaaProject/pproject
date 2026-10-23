@@ -16,9 +16,9 @@ Digital Object Identifiers (DOIs) on Zenodo.
 
 - **Deadline:** 23 October 2026
 - **DOI:** [10.5281/zenodo.23604597](https://doi.org/10.5281/zenodo.23604597)
-- **PDF:** [View D2 Report](reports/D2_Project_Specifications_and_Literature_Review.pdf)
+- **PDF:** [View D2 Report](reports/LifeLink_D2_Project_Specifications-4.pdf)
 
 ### D3 — Backlog Version 1
 
 - **Deadline:** 23 October 2026
-- **PDF:** [View D3 Backlog](reports/D3_Backlog_v1.pdf)
+- **PDF:** [View D3 Backlog](reports/LifeLink_D3_Backlog_v1-2.pdf)

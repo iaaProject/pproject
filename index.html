@@ -7,7 +7,7 @@
         content="width=device-width, initial-scale=1.0">
 
   <meta name="description"
-        content="LifeLink: A Secure Infrastructure-Independent Emergency Communication System - TED University CMPE 491.">
+        content="LifeLink: A Secure Infrastructure-Independent Emergency Communication System — TED University CMPE 491.">
 
   <title>LifeLink | CMPE 491 Senior Project 1</title>
 
@@ -43,9 +43,7 @@
     .hero {
       padding: 58px 20px 36px;
       background: linear-gradient(
-        140deg,
-        var(--deep),
-        var(--navy)
+        140deg, var(--deep), var(--navy)
       );
       color: white;
       text-align: center;
@@ -53,10 +51,10 @@
 
     .eyebrow {
       margin: 0 0 12px;
-      font-size: 0.84rem;
-      letter-spacing: 0.1em;
+      font-size: .84rem;
+      letter-spacing: .1em;
       text-transform: uppercase;
-      opacity: 0.85;
+      opacity: .85;
     }
 
     .hero h1 {
@@ -68,7 +66,7 @@
 
     .hero h1 span {
       display: block;
-      font-size: 0.67em;
+      font-size: .67em;
       font-weight: 500;
       margin-top: 12px;
     }
@@ -92,14 +90,14 @@
     nav a {
       color: white;
       text-decoration: none;
-      font-size: 0.92rem;
+      font-size: .92rem;
     }
 
     nav a:hover {
       text-decoration: underline;
     }
 
-    /* MAIN CONTENT */
+    /* MAIN */
 
     main {
       max-width: 1060px;
@@ -112,7 +110,7 @@
       padding: 32px 36px;
       background: white;
       border-radius: 16px;
-      box-shadow: 0 3px 15px rgba(27,45,88,0.045);
+      box-shadow: 0 3px 15px rgba(27,45,88,.045);
       scroll-margin-top: 24px;
     }
 
@@ -128,6 +126,11 @@
       margin: 0 0 7px;
     }
 
+    h4 {
+      color: var(--navy);
+      margin: 0 0 5px;
+    }
+
     p {
       margin: 0;
     }
@@ -137,7 +140,7 @@
       margin-bottom: 20px;
     }
 
-    /* SYSTEM COMPONENTS */
+    /* COMPONENTS */
 
     .component-grid,
     .semester-grid {
@@ -159,7 +162,7 @@
     }
 
     .component p {
-      font-size: 0.96rem;
+      font-size: .96rem;
     }
 
     /* DELIVERABLES */
@@ -209,7 +212,7 @@
     .date {
       display: block;
       color: var(--muted);
-      font-size: 0.92rem;
+      font-size: .92rem;
       margin-bottom: 9px;
     }
 
@@ -226,19 +229,13 @@
       border: 1px solid #b6c9e6;
       color: var(--navy);
       background: #edf3ff;
-      font-size: 0.87rem;
+      font-size: .87rem;
       font-weight: 600;
       text-decoration: none;
-      transition: background 0.2s ease;
     }
 
     .file-link:hover {
       background: #dce9ff;
-    }
-
-    .file-link:focus-visible {
-      outline: 3px solid var(--blue);
-      outline-offset: 2px;
     }
 
     .file-link.pending {
@@ -249,9 +246,33 @@
       cursor: default;
     }
 
+    /* DOI SECTION */
+
+    .doi-section {
+      margin-top: 15px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+    }
+
+    .doi-section h4 {
+      font-size: .92rem;
+      margin-bottom: 5px;
+    }
+
+    .doi-section a {
+      color: var(--blue);
+      text-decoration: underline;
+      font-size: .94rem;
+      overflow-wrap: anywhere;
+    }
+
+    .doi-section a:hover {
+      color: var(--deep);
+    }
+
     .report-note {
       color: var(--muted);
-      font-size: 0.86rem;
+      font-size: .86rem;
       margin-top: 15px;
     }
 
@@ -264,7 +285,7 @@
     .semester-subtitle {
       color: var(--muted);
       margin-bottom: 13px;
-      font-size: 0.93rem;
+      font-size: .93rem;
     }
 
     .semester ul {
@@ -287,7 +308,7 @@
       margin-top: 7px;
     }
 
-    /* SUPERVISION AND JURY */
+    /* JURY */
 
     .jury-grid {
       display: grid;
@@ -310,13 +331,12 @@
       text-align: center;
       padding: 0 20px 34px;
       color: var(--muted);
-      font-size: 0.9rem;
+      font-size: .9rem;
     }
 
-    /* MOBILE RESPONSIVENESS */
+    /* MOBILE */
 
     @media (max-width: 700px) {
-
       .hero {
         padding-top: 45px;
       }
@@ -387,13 +407,11 @@
 
   </header>
 
-
   <main>
 
     <!-- ABOUT THE PROJECT -->
 
     <section id="about">
-
       <h2>About the Project</h2>
 
       <p>
@@ -413,11 +431,9 @@
 
     </section>
 
-
     <!-- SYSTEM COMPONENTS -->
 
     <section id="components">
-
       <h2>System Components</h2>
 
       <div class="component-grid">
@@ -456,26 +472,22 @@
         </article>
 
       </div>
-
     </section>
-
 
     <!-- PLANNED DELIVERABLES -->
 
     <section id="deliverables">
-
       <h2>Planned Deliverables</h2>
 
       <ul class="deliverables">
-
         <li>
           System requirements, architecture,
           and technical documentation.
         </li>
 
         <li>
-          A low-power wristband prototype for
-          help requests and pulse indications.
+          A low-power wristband prototype
+          for help requests and pulse indications.
         </li>
 
         <li>
@@ -496,13 +508,10 @@
           An integrated demonstration
           and evaluation report.
         </li>
-
       </ul>
-
     </section>
 
-
-    <!-- REPORTS AND BACKLOG VERSIONS -->
+    <!-- REPORTS AND BACKLOG -->
 
     <section id="reports">
 
@@ -510,8 +519,8 @@
 
       <p class="section-note">
         Official CMPE 491 deliverable schedule.
-        Available reports and backlog versions can
-        be accessed through the links below.
+        Available reports and backlog versions
+        can be accessed through the links below.
         Future deliverables will be published
         as they become available.
       </p>
@@ -521,7 +530,6 @@
         <!-- D1 -->
 
         <article class="report">
-
           <div class="report-id">D1</div>
 
           <div>
@@ -535,24 +543,31 @@
             </span>
 
             <div class="files">
-
               <a class="file-link"
                  href="reports/LifeLink_D1_Proposal_Initial_Literature_Review_EN.pdf"
                  target="_blank"
                  rel="noopener noreferrer">
                 View D1 Report ↗
               </a>
-
             </div>
+
+            <!-- D1 DOI -->
+            <div class="doi-section">
+              <h4>DOI</h4>
+
+              <a href="https://doi.org/10.5281/zenodo.23604495"
+                 target="_blank"
+                 rel="noopener noreferrer">
+                10.5281/zenodo.23604495
+              </a>
+            </div>
+
           </div>
-
         </article>
-
 
         <!-- D2 -->
 
         <article class="report">
-
           <div class="report-id">D2</div>
 
           <div>
@@ -566,54 +581,55 @@
             </span>
 
             <div class="files">
-
               <a class="file-link"
-                 href="reports/LifeLink_D2_Project_Specifications-4.pdf"
+                 href="reports/D2_Project_Specifications_and_Literature_Review.pdf"
                  target="_blank"
                  rel="noopener noreferrer">
                 View D2 Report ↗
               </a>
-
             </div>
+
+            <!-- D2 DOI -->
+            <div class="doi-section">
+              <h4>DOI</h4>
+
+              <a href="https://doi.org/10.5281/zenodo.23604597"
+                 target="_blank"
+                 rel="noopener noreferrer">
+                10.5281/zenodo.23604597
+              </a>
+            </div>
+
           </div>
-
         </article>
-
 
         <!-- D3 -->
 
         <article class="report">
-
           <div class="report-id">D3</div>
 
           <div>
-            <h3>
-              Backlog — Version 1
-            </h3>
+            <h3>Backlog — Version 1</h3>
 
             <span class="date">
               Deadline: 23 October 2026
             </span>
 
             <div class="files">
-
               <a class="file-link"
-                 href="reports/LifeLink_D3_Backlog_v1-2.pdf"
+                 href="reports/D3_Backlog_v1.pdf"
                  target="_blank"
                  rel="noopener noreferrer">
                 View Backlog v1 ↗
               </a>
-
             </div>
+
           </div>
-
         </article>
-
 
         <!-- D4 -->
 
         <article class="report">
-
           <div class="report-id">D4</div>
 
           <div>
@@ -628,21 +644,17 @@
                 Awaiting upload
               </span>
             </div>
+
           </div>
-
         </article>
-
 
         <!-- D5 -->
 
         <article class="report">
-
           <div class="report-id">D5</div>
 
           <div>
-            <h3>
-              Updated Backlog — Version 2
-            </h3>
+            <h3>Updated Backlog — Version 2</h3>
 
             <span class="date">
               Deadline: 20 November 2026
@@ -653,21 +665,17 @@
                 Awaiting upload
               </span>
             </div>
+
           </div>
-
         </article>
-
 
         <!-- D6 -->
 
         <article class="report">
-
           <div class="report-id">D6</div>
 
           <div>
-            <h3>
-              High-Level Design Report
-            </h3>
+            <h3>High-Level Design Report</h3>
 
             <span class="date">
               Deadline: 31 December 2026
@@ -678,21 +686,17 @@
                 Awaiting upload
               </span>
             </div>
+
           </div>
-
         </article>
-
 
         <!-- D7 -->
 
         <article class="report">
-
           <div class="report-id">D7</div>
 
           <div>
-            <h3>
-              Updated Backlog — Version 3
-            </h3>
+            <h3>Updated Backlog — Version 3</h3>
 
             <span class="date">
               Deadline: 31 December 2026
@@ -703,15 +707,13 @@
                 Awaiting upload
               </span>
             </div>
+
           </div>
-
         </article>
-
 
         <!-- D8 -->
 
         <article class="report">
-
           <div class="report-id">D8</div>
 
           <div>
@@ -726,7 +728,6 @@
             </span>
 
             <div class="files">
-
               <span class="file-link pending">
                 Presentation: Awaiting upload
               </span>
@@ -738,10 +739,9 @@
               <span class="file-link pending">
                 Demo: Awaiting upload
               </span>
-
             </div>
-          </div>
 
+          </div>
         </article>
 
       </div>
@@ -755,19 +755,14 @@
 
     </section>
 
-
     <!-- PROJECT TIMELINE -->
 
     <section id="timeline">
-
       <h2>Project Timeline</h2>
 
       <div class="semester-grid">
 
-        <!-- SEMESTER 1 -->
-
         <article class="semester">
-
           <h3>Semester 1 — CMPE 491</h3>
 
           <p class="semester-subtitle">
@@ -776,7 +771,6 @@
           </p>
 
           <ul>
-
             <li>
               <strong>October 2026:</strong>
               Project proposal, specifications,
@@ -804,16 +798,10 @@
               wristband through offline messaging
               to the local gateway.
             </li>
-
           </ul>
-
         </article>
 
-
-        <!-- SEMESTER 2 -->
-
         <article class="semester">
-
           <h3>Semester 2</h3>
 
           <p class="semester-subtitle">
@@ -822,7 +810,6 @@
           </p>
 
           <ul>
-
             <li>
               Extend and refine the wristband,
               messaging channel, local gateway,
@@ -846,37 +833,27 @@
               the final demonstration
               and project report.
             </li>
-
           </ul>
-
         </article>
 
       </div>
-
     </section>
-
 
     <!-- TEAM MEMBERS -->
 
     <section id="team">
-
       <h2>Team Members</h2>
 
       <ul class="team-members">
-
         <li>Alaettin Doğan</li>
         <li>Mehmet Alp Vural</li>
         <li>İlayda Tsetsekos</li>
-
       </ul>
-
     </section>
 
-
-    <!-- PROJECT SUPERVISION AND JURY -->
+    <!-- SUPERVISION AND JURY -->
 
     <section id="jury">
-
       <h2>Project Supervision &amp; Jury</h2>
 
       <div class="jury-grid">
@@ -897,11 +874,9 @@
         </article>
 
       </div>
-
     </section>
 
   </main>
-
 
   <!-- FOOTER -->
 
